@@ -3,7 +3,7 @@ __author__ = 'Jeremy'
 
 def main():
     try:
-        random_numbers = open('numbers1.txt', 'r')
+        random_numbers = open('numbers.txt', 'r')
         number = 0
         total = 0
         average = 0
@@ -16,6 +16,6 @@ def main():
         print("Sum of all numbers = " + str(total))
         print("Lines read: " + str(number))
         print("Average: " + str(average))
-    except(IOError, ValueError):
+    except(IOError):
         pass
 main()
