@@ -1,6 +1,5 @@
 __author__ = 'Jeremy'
 
-
 import random
 
 def main():
@@ -15,4 +14,17 @@ def main():
     random_numbers.close()
     print('numbers printed to file')
 
+main()
+
+def main():
+        random_numbers = open('random_numbers.txt', 'r')
+        number = 0
+        total = 0
+        print("List of numbers:")
+        for line in random_numbers.readlines():
+              print(line)
+              total = total+int(line)
+              number +=1
+        print("Sum of all numbers = " + str(total))
+        print("Lines read: " + str(number))
 main()
